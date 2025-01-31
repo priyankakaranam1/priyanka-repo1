@@ -15,7 +15,7 @@ resource "aws_vpc" "test-vpc" {
 resource "aws_subnet" "db-subnet" {
     vpc_id = "vpc-00113b62a398631a1"
     cidr_block = "10.0.0.0/18"
-    tags = {
+    tags = {  
         name = "dev-db-subnet"
         label = "dev"
     }
